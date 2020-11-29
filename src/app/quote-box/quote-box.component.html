@@ -1,0 +1,12 @@
+
+<div *ngIf="quote" id="quote-box">
+  <i><h1 id="text">"{{quote.text}}"</h1></i>
+    <p id="author">- {{quote.author}}</p>
+  <div id="buttons">
+    <a id="new-quote" (click)="getQuote(quote.id)">new quote</a>
+    <a href="https://twitter.com/intent/tweet?hashtag=quotes&ref_src=twsrc%5Etfw&text='{{quote.text}}'-{{quote.author}}'"
+        id="tweet-quote" target="_blank">
+        tweet quote
+    </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>

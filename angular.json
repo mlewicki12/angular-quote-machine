@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "quote-machine"
+  "defaultProject": "quote-machine",
+  "cli": {
+    "analytics": false
+  }
 }
